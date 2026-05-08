@@ -5,7 +5,7 @@ module load regenie
 njobs=4
 
 ################### non-binary outcomes #############################
-for i in $(cat phenotype_list.txt); do
+for i in $(cat phenotype_list_nonbinary.txt); do
 
 # step 1
 base_command="regenie_v3.2.4.gz_x86_64_Linux \
@@ -83,8 +83,8 @@ regenie_v3.2.4.gz_x86_64_Linux \
 --threads 8 
 done 
 
-################### non-binary outcomes #############################
-for i in $(cat phenotype_list.txt); do
+################### binary outcomes #############################
+for i in $(cat phenotype_list_binary.txt); do
 
 # step 1
 base_command="regenie_v3.2.4.gz_x86_64_Linux \
